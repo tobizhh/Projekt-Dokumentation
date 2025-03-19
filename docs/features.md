@@ -1,4 +1,4 @@
-#Features von SmartHome mit C++
+# Features von SmartHome mit C++
 
 Gerätesteuerung: Licht, Heizung, Türschlösser und mehr per Befehlszeile oder Webinterface steuern.
 Sensorauswertung: Temperatur-, Bewegungs- und CO2-Sensoren mit Echtzeitüberwachung.
