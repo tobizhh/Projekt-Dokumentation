@@ -1,0 +1,15 @@
+name: Weather Fetch
+
+on:
+  workflow_dispatch:
+
+jobs:
+  get-weather:
+    runs-on: ubuntu-latest
+    env:
+      API_KEY: ${{ secrets.OPENWEATHER_API_KEY }}
+    steps:
+      - name: Fetch weather data
+        run: |
+          CITY="Zurich"
+          curl "https://api.openweathermap.org/data/2.5/weather?q=$CITY&appid=$API_KEY&units=metric"
